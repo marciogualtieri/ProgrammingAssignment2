@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
   ## x: An invertible matrix
   ##
   ## Returns:
-  ## An special "matrix" object that caches its inverse.
+  ## A special "matrix" object that caches its inverse.
   
   cached_inverse_of_x <- NULL # initializes cache with NULL
 
@@ -53,7 +53,7 @@ cacheSolve <- function(x, ...) {
   ## Returns:
   ## A matrix that is the inverse of 'x'
 
-  # get cached value for inverse of x and returned if it is not NULL
+  # get cached value for inverse of x and return it if it is not NULL
   inverse_of_x <- x$getinverse()
   if(!is.null(inverse_of_x)) {
     return(inverse_of_x)
