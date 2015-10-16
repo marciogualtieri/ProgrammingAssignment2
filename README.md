@@ -103,3 +103,30 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
+
+### Unit Testing
+
+If you would like to add tests to your code ([TDD](https://en.wikipedia.org/wiki/Test-driven_development) is a much
+more productive way to write code in the long run), a good option is using RUnit and testthat, which can be installed
+by executing the following commands in the R console:
+
+Install RUnit:
+
+    install.packages('RUnit')
+    
+Install testthat:
+
+    install.packages('testthat')
+
+Test code defined inside the subfolder 'test' will be executed when executing the script 'run_tests.R':
+
+    source('run_tests.R')
+
+Additionally, since we need to test if caching actually works, a way to benchmark functions in R is required.
+I'm using rbenchmark to accomplish this.
+
+Install rbenchmark:
+
+    install.packages('rbenchmark')
+
+
